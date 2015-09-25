@@ -40,6 +40,20 @@
             }
         %></tbody><%
         %></table><%
+        %><form method="post" action="newShit.jsp">
+            <table  width="50%" cellpadding="3">
+                    
+                    <tbody>
+                        
+                        <tr>
+                            <td><input type="submit" name="peeps" value="New Customers" /></td>
+                            
+                        </tr>
+                        
+                    </tbody>
+                    </table>
+                </form>
+                <%
     }
     else if (input.equals("Employees")) {
         %><table  width="50%" border="1">
