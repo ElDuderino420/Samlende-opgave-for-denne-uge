@@ -19,8 +19,8 @@
                     <tbody>
                         
                         <tr>
-                            <td><input type="submit" value="customers" /></td>
-                            <td><input type="submit" value="employees" /></td>
+                            <td><input type="submit" name="peeps" value="customers" /></td>
+                            <td><input type="submit" name="peeps" value="employees" /></td>
                         </tr>
                         
                     </tbody>

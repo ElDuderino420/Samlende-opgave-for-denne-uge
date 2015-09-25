@@ -3,21 +3,15 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ page import ="java.sql.*" %>
 <%
-    String userid = request.getParameter("uname");    
-    String pwd = request.getParameter("pass");
+    String input = request.getParameter("peeps");    
     Class.forName("com.mysql.jdbc.Driver");
-    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/demologin", "root", "b292335668076");
-    Statement teacher = con.createStatement();
-    Statement student = con.createStatement();
-    ResultSet studentEntry;
-    ResultSet teacherEntry;
-    teacherEntry = teacher.executeQuery("SELECT * FROM teachers WHERE uname='" + userid + "' AND pass='" + pwd + "'");
-    studentEntry = student.executeQuery("SELECT * FROM students WHERE uname='" + userid + "' AND pass='" + pwd + "'");
-    if (teacherEntry.next()) {
-        session.setAttribute("userid", userid);
-        //out.println("welcome " + userid);
-        //out.println("<a href='logout.jsp'>Log out</a>");
-        response.sendRedirect("teacherLogin.jsp");
+    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Exerise", "root", "pass123");
+    Statement customers = con.createStatement();
+    Statement employees = con.createStatement();
+    ResultSet customersEntry = customers.executeQuery("SELECT * FROM customers");
+    ResultSet employeesEntry = employees.executeQuery("SELECT * FROM employees");
+    if (input.equals("customers")) {
+        
     }
     if (studentEntry.next()) {
         session.setAttribute("userid", userid);
