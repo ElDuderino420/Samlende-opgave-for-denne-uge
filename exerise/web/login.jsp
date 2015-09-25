@@ -5,7 +5,7 @@
 <%
     String input = request.getParameter("peeps");    
     Class.forName("com.mysql.jdbc.Driver");
-    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Exerise", "root", "b292335668076");
+    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Exerise", "admin", "admin");
     Statement customers = con.createStatement();
     Statement employees = con.createStatement();
     ResultSet rs = customers.executeQuery("select * from customers,zipcodes where customers.zip = zipcodes.zip;");
