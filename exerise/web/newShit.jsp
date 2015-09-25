@@ -17,11 +17,10 @@
     Connection connection = null;
     String input = request.getParameter("peeps");    
     Class.forName("com.mysql.jdbc.Driver");
-    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Exerise", "root", "password");
-    String query1 = "insert into customers values(?,?,?,?,?)";
+    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Exerise", "root", "b292335668076");
+    String query1 = "insert into customers values(?,'?','?',?,'?');";
     String query2 = "select * from zipcodes";
     String query3 = "select cno from customers";
-    
     statement = connection.prepareStatement(query1);
     pszip = connection.prepareStatement(query2);
     psids = connection.prepareStatement(query3);
@@ -56,6 +55,7 @@
                                 <select>
                                     <%while(zip.next()){%>
                                     <option name="zip" value=<%=zip.getInt(1)%>><%=zip.getInt(1)%>, <%=zip.getString(2)%></option>
+                                    <%}%>
                                 </select>
                             </td>
                         </tr>
