@@ -44,12 +44,12 @@
 
                     <tr>
                         <td>Name</td>
-                        <td><input type="text" name="name" value="" /></td>
+                        <td><input type="text" name="name" value="Insert Name Here" /></td>
                     </tr>
 
                     <tr>
                         <td>Address</td>
-                        <td><input type="text" name="street" value="" /></td>
+                        <td><input type="text" name="street" value="123 Street Name" /></td>
                     </tr>
 
                     <tr>
@@ -65,11 +65,11 @@
 
                     <tr>
                         <td>Phone number</td>
-                        <td><input type="Phone number" name="phone" value="" /></td>
+                        <td><input type="Phone number" name="phone" value="123-456-7890" /></td>
                     </tr>
 
                     <tr>
-                        <td><input type="submit" value="Create New Custommer" /></td>
+                        <td><input type="submit" value="Create New Custommer"/></td>
                         <td><input type="reset" value="Reset" /></td>
                     </tr>
                 </tbody>
@@ -80,7 +80,17 @@
 
 
 <%
-
+        String name = request.getParameter("name");
+        String street = request.getParameter("street");
+        int city = Integer.parseInt(request.getParameter("zip"));
+        String phone = request.getParameter("phone");
+        
+        statement.setInt(1, 123);
+        statement.setString(2, name);
+        statement.setString(3, street);
+        statement.setInt(4, city);
+        statement.setString(5, phone);
+        
         statement.executeUpdate();
     } catch (Exception ee) {
         System.out.println("fail");
