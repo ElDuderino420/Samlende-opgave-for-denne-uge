@@ -43,12 +43,12 @@
                 <tbody>
 
                     <tr>
-                        <td>name</td>
+                        <td>Name</td>
                         <td><input type="text" name="name" value="" /></td>
                     </tr>
 
                     <tr>
-                        <td>Street</td>
+                        <td>Address</td>
                         <td><input type="text" name="street" value="" /></td>
                     </tr>
 
@@ -64,7 +64,7 @@
                     </tr>
 
                     <tr>
-                        <td></td>
+                        <td>Phone number</td>
                         <td><input type="Phone number" name="phone" value="" /></td>
                     </tr>
 
