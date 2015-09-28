@@ -69,7 +69,7 @@
                     </tr>
 
                     <tr>
-                        <td><input type="submit" value="Login" /></td>
+                        <td><input type="submit" value="Create" href="newShit.jsp"/></td>
                         <td><input type="reset" value="Reset" /></td>
                     </tr>
                     <tr>
