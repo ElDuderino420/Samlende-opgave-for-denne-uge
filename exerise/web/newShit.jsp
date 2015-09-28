@@ -37,7 +37,7 @@
             <table  width="50%" cellpadding="3">
                 <thead>
                     <tr>
-                        <th colspan="2">Input new customer data</th>
+                        <th colspan="2" >Input new customer data</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -69,11 +69,8 @@
                     </tr>
 
                     <tr>
-                        <td><input type="submit" value="Create" href="newShit.jsp"/></td>
+                        <td><input type="submit" value="Create New Custommer" /></td>
                         <td><input type="reset" value="Reset" /></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">Yet Not Registered!! <br><a href="reg.jsp">Register Here</a></td>
                     </tr>
                 </tbody>
             </table>
